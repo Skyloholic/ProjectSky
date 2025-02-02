@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGTM | OTEM</title>
+</head>
+<body>
+    <h1> <code> Open Telemetry(OTEM) & LGTM Stack (Future Is Here !)</code>  </h1>
+    <p><a href="">Grafana</a> | <a href="">Tempo</a> | <a href="">Loki</a>
+    <hr>
+    <p>
+       An "<b>OpenTelemetry</b> and <b>LGTM</b> stack" refers to a system where OpenTelemetry is used to collect and standardize observability data (logs, metrics, traces) from applications, which is then sent to the Grafana LGTM stack (Loki, Grafana, Tempo, and Mimir) for storage, analysis, and visualization, providing a comprehensive view of system health and performance across different components. 
+    </p>
+    <pre>
+        "The OpenTelemetry Collector is designed to offload observability processing to a separate service,
+        distancing it from the applications that generate the observability data. By doing so, applications can remain streamlined,
+        focusing solely on their core functionality,
+        while the advanced signal processing logic is centralized and shared across all services in the system."
+    </pre>
+    <img src="The OTel Collector Architecture.jpeg" alt="" >
+
+    <h2><code>Key points about OpenTelemetry and the LGTM stack:</code></h2>
+    <p>
+    <b>OpenTelemetry Function:</b>
+    It standardizes how applications generate and export telemetry data, making it vendor-agnostic and allowing you to use different monitoring tools with the same data format. 
+    </p>
+    <p>
+       
+        <br>
+        <b>LGTM Stack Components:</b>
+        
+        <br>
+        <ul>
+<li><a href="https://medium.com/@asingh.etw/building-observability-opentelemetry-platform-with-the-grafana-lgtm-stack-and-agent-88437e94e005#:~:text=LGTM%20stands%20for%20Loki%2C%20Grafana,let's%20see%20how%20and%20why." target="_blank">Loki</a>:Stores logs efficiently, especially for large volumes of data.</li>
+       <li> <a href="https://medium.com/@asingh.etw/building-observability-opentelemetry-platform-with-the-grafana-lgtm-stack-and-agent-88437e94e005#:~:text=LGTM%20stands%20for%20Loki%2C%20Grafana,let's%20see%20how%20and%20why.">Grafana</a>: A user interface for creating dashboards and visualizing data from various sources, including the LGTM stack</li>
+        <li><a href="https://medium.com/@asingh.etw/building-observability-opentelemetry-platform-with-the-grafana-lgtm-stack-and-agent-88437e94e005#:~:text=LGTM%20stands%20for%20Loki%2C%20Grafana,let's%20see%20how%20and%20why.">Tempo</a>: A dedicated distributed tracing backend to store and analyze application traces.</li>
+        <li><a href="https://medium.com/@asingh.etw/building-observability-opentelemetry-platform-with-the-grafana-lgtm-stack-and-agent-88437e94e005#:~:text=LGTM%20stands%20for%20Loki%2C%20Grafana,let's%20see%20how%20and%20why.">Mimir</a>: A high-performance time-series database for storing metrics.</li>
+    </ul>
+    </p>
+    <hr>
+    <p><h2><b><code>How they work together:</code></b></h2></p>
+    <ol>
+        <li> Applications are instrumented with OpenTelemetry libraries to capture telemetry data. </li>
+        <li>The OpenTelemetry Collector receives this data and can process it before sending it to the appropriate backend in the LGTM stack based on the data type (logs to Loki, traces to Tempo, metrics to Mimir).</li>
+        <li>Users can then access Grafana to build dashboards and analyze the collected data through visualizations.</li>
+    </ol>
+    <hr>
+    <footer>
+        &copy; 2025 , Open Telemetry and LGTM Stack .All rights reserved.
+    </footer>
+</body>
+</html>
